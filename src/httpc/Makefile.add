@@ -1,0 +1,5 @@
+SYSTEMS_OBJ += ywhttpc.o ywtcpip.o
+
+VPATH:=src/httpc:$(VPATH)
+
+#include systems/lib_*/Makefile.add

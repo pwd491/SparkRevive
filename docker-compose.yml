@@ -1,0 +1,11 @@
+version: '3'
+services:
+  builder:
+    environment:
+      - PLUGINROOT=/root/spark
+      - PLUGINAPP=/root/spark/app
+    build: .
+    volumes:
+      - ./release:/app/output
+
+    command: /root/spark/docker-entrypoint.sh
