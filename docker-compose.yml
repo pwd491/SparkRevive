@@ -4,6 +4,7 @@ services:
     environment:
       - PLUGINROOT=/root/spark
       - PLUGINAPP=/root/spark/app
+      - PLUGIN_TARGET=iptv
     build: .
     volumes:
       - ./release:/app/output

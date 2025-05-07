@@ -30,4 +30,3 @@ install:
 	cp $(PLUGINROOT)/plugin_$(PLUGIN_TARGET).s  ./release/plugin/var/bin/
 	cp  -rf $(PLUGIN_APP)/pic/common ./release/plugin/var/pic/common
 	cp  -rf $(PLUGIN_APP)/pic/$(PLUGIN_TARGET) ./release/plugin/var/pic/
-	

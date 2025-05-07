@@ -2,6 +2,7 @@
 set -e
 
 cd "$PLUGINROOT"
-source ./make.sh camconfig
-cd "$PLUGINAPP/camconfig/release/"
-tar -czvf /app/output/camconfig_0.1.tar.gz plugin
+source ./make.sh $PLUGIN_TARGET
+cd "$PLUGINAPP/$PLUGIN_TARGET/release/"
+chmod -R +x ./plugin/var/bin/*
+tar -cvf /app/output/$PLUGIN_TARGET.tar plugin
